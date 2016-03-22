@@ -1,0 +1,12 @@
+default: &default
+  SHARELES_DATABASE_PASSWORD: local_db_password
+  GOOGLE_APP_CLIENT_ID: 324234234324-7saf79sadfg7a7fgafassa.apps.googleusercontent.com
+  GOOGLE_APP_CLIENT_SECRET: aJasdh8had82nbH_sdkJhdskHa
+  MANDRILL_SECRET_KEY: kdsUfn8a-JKakwInsa8DAJ
+development:
+  <<: *default
+test:
+  <<: *default
+production:
+  <<: *default
+  SECRET_KEY_BASE: bb2e48f71b7a341ebc0b06bb441d11e39c75be70dbb5c97f938040e5a6db7f7ef65f7dabc0314f42163ee37d4d9ccd24a83d19dcf1bd05c145a8d08750bccacb

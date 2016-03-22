@@ -2,7 +2,6 @@
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalNorm">
   Launch Demo Form
 </button>
-
 <!-- Modal -->
 <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -14,34 +13,29 @@
           <span class="sr-only">Close</span>
         </button>
         <h4 class="modal-title" id="myModalLabel">
-                   Share this page
+          Share this page
                 </h4>
       </div>
-
       <!-- Modal Body -->
       <div class="modal-body">
-
         <form role="form">
           <div class="form-group">
             <%= link_to 'Import contacts from gmail', '/contacts/gmail', class: 'btn btn-primary' %>
-                    <!--<button type="submit" class="btn btn-primary">Import contacts from gmail</button>-->
+            <!--<button type="submit" class="btn btn-primary">Import contacts from gmail</button>-->
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Contacts</label>
             <ul id="contacts-tagit" name="inviteEmails"></ul>
-            <input type="contacts" class="form-control" id="contacts1" placeholder="Contact1,Contact2,Contact3" />
+            <!--<input type="contacts" class="form-control" id="contacts1" placeholder="Contact1,Contact2,Contact3" />-->
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Message</label>
             <input type="message" class="form-control" id="message1" placeholder="Custom message" />
           </div>
-          
           <!--<button type="submit" class="btn btn-danger">Share with friends</button>-->
         </form>
-<%= button_tag 'Share with friends', class: "btn btn-danger", type: "submit", onClick: "send_emails()", data: { disable_with: "Wait.." }%>
-
+        <%= button_tag 'Share with friends', class: "btn btn-danger", type: "submit", onClick: "send_emails()", data: { disable_with: "Wait.." }%>
       </div>
-     
     </div>
   </div>
 </div>
